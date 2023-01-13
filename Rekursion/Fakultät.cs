@@ -1,15 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Rekursion
+﻿namespace Rekursion
 {
     public class Fakultät
     {
-
-        public int Fakultätt(int number)
+        public int FakultätCalc(int number)
         {
             if(number < 1)
                 return 0;
@@ -17,16 +10,10 @@ namespace Rekursion
             {
                 return number;
             }
-            return number * FakultätCalc(number -1);
-        }
-
-        private int FakultätCalc(int num)
-        {
-            int retval = num;
-
-            for(int i = 1; i < num; i++)
+            int retval = number;
+            for (int i = 1; i < number; i++)
             {
-                retval = retval * i; 
+                retval = retval * i;
             }
             return retval;
         }

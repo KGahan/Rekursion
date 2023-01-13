@@ -8,7 +8,7 @@ namespace Rekursion
 {
     public class Fibonacci
     {
-        public int Fibonaccii(int number)
+        public int FibonacciCall(int number)
         {
             if (number < 1)
                 return 0;

@@ -11,19 +11,27 @@ namespace RekursionTests
         }
 
         [Test]
-        public void idkwhattosay()
+        public void fakultät_number_ReturnsCorrectNumber()
         {
             var fakultaet = new Fakultät();
-            int fakultaetCalc = fakultaet.Fakultätt(6);
-            Assert.AreEqual(720, fakultaetCalc);
+            int fakultaet1 = fakultaet.FakultätCalc(6);
+            int fakultaet2 = fakultaet.FakultätCalc(0);
+            int fakultaet3 = fakultaet.FakultätCalc(-1);
+            Assert.AreEqual(720, fakultaet1);
+            Assert.AreEqual(0, fakultaet2);
+            Assert.AreEqual(0, fakultaet3);
         }
 
         [Test]
-        public void idkwhattosay2()
+        public void fibonacci_number_ReturnsCorrectFibonacciValue()
         {
             var fibonacci = new Fibonacci();
-            int fibonacciCalc = fibonacci.Fibonaccii(5);
-            Assert.AreEqual(5, fibonacciCalc);
+            int fibonacciCalc1 = fibonacci.FibonacciCall(5);
+            int fibonacciCalc2 = fibonacci.FibonacciCall(-1);
+            int fibonacciCalc3 = fibonacci.FibonacciCall(0);
+            Assert.AreEqual(5, fibonacciCalc1);
+            Assert.AreEqual(0, fibonacciCalc2);
+            Assert.AreEqual(0, fibonacciCalc3);
         }
     }
 }
